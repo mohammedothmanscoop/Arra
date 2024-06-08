@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title> Properties </title>
+</head>
+
+<body>
+
+    <div class="back">
+        <div class="header">
+            
+            <h1> شركة آراء العقارية </h1>
+
+            <nav>
+                <ul>
+
+                    <li> <a href="home.html">الصفحة الرئيسية</a></li>
+                    <li> <a href="AboutUs.html">من نحن </a></li>
+                    <li> <a href="Properties.html"> العقارات</a></li>
+
+
+
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+
+
+        <section class=" Properties">
+            <div class="contener">
+
+                </header>
+
+
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>المدينة </th>
+                            <th>التفاصيل</th>
+                            <th>الايجار الشهري </th>
+                            <th>اظهار التفاصيل </th>
+                            <th>الاختيار </th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody id="flats">
+                    </tbody>
+                </table>
+
+
+                <section class="form">
+                    <div class="contener">
+                        <div class="box">
+                            <button class="cancelbtn" id="cancelbtn">X</button>
+
+                            <form onsubmit="return false;" method="post" name="myForm" class="myForm">
+
+                                <div class="group" style="flex: 100%;"><input class="inp" id="name" type="text"
+                                        placeholder="الاسم الكامل باللغة العربية"></div>
+                                <div class="group"><input class="inp" id="IDC" type="text"
+                                        placeholder="الرقم الوطني(اجباري واجب الادخال)"> </div>
+                                <div class="group"><input class="inp" id="date" type="date"
+                                        placeholder="تاريخ الولادة(اختياري)">
+                                </div>
+                                <div class="group"><input class="inp" id="phone" type="text"
+                                        placeholder="(اختياري)رقم الهاتف"></div>
+                                <div class="group"><input class="inp" id="email" type="email"
+                                        placeholder="(اختياري)الايميل الشخصي">
+                                </div>
+                                <label for="txtCaptcha" class="inp " id="refrlpl" style="flex: 100%;"></label>
+                                <div class="group"><input class="inp" id="txtCaptcha" type="text"
+                                        placeholder=" ادخال الرمز الذي في الاعلى" required> </div>
+                                <div class="open">
+                                    <input type="button" class="inp" id="btnrefresh" value="تحديث" style="flex: 5%;"
+                                        onclick="Captcha();" />
+                                </div>
+
+                                <input class="inp btn" id="done" type="button" value="done">
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="butn">
+                    <button id="btnsub">متابعة</button>
+                </div>
+
+                <script src="./myFunctions.js"></script>
+            </div>
+</body>
+
+</html>
